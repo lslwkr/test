@@ -1,0 +1,76 @@
+package utils;
+
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.Provider;
+import java.security.PublicKey;
+import java.security.Security;
+import java.security.Signature;
+import java.security.SignatureException;
+
+public class SignatureUtils {
+	
+	public static void main(String[]  args) throws Exception
+	{
+		//showAlgorithm();
+		signature();
+	}
+	
+	
+	public static void showAlgorithm()
+	{
+		for (Provider provider : Security.getProviders()) {  
+		    System.out.println("Provider: " + provider.getName());      
+		    for (Provider.Service service : provider.getServices()){      
+		    System.out.println("  Algorithm: " + service.getAlgorithm());     
+		    }    
+		    System.out.println("\n");  
+		}   
+		  
+	}
+	
+	public static void signature() throws Exception
+	{
+		String before = "asdf";    
+		 byte[] plainText = before.getBytes("UTF8");    
+		  
+		 //形成RSA公钥对    
+		 KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");    
+		 keyGen.initialize(1024);    
+		 KeyPair key = keyGen.generateKeyPair();    
+		  
+		 //使用私钥签名**********************************************************    
+		 Signature sig = Signature.getInstance("SHA256withRSA");    
+		 sig.initSign(key.getPrivate());//sig对象得到私钥    
+		  
+		  
+		 //签名对象得到原始数据    
+		 sig.update(plainText);//sig对象得到原始数据(现实中用的是原始数据的摘要，摘要的是单向的，即摘要算法后无法解密)    
+		 byte[] signature = sig.sign();//sig对象用私钥对原始数据进行签名，签名后得到签名signature    
+		 System.out.println(sig.getProvider().getInfo());    
+		  
+		  
+		 String after1 = new String(signature, "UTF8");    
+		 System.out.println("/n用私钥签名后:"+after1);    
+		  
+		 //使用公钥验证  
+		 //key = keyGen.generateKeyPair();   
+		 PublicKey pubKey = key.getPublic();
+		 System.out.println("====="+pubKey.toString()+"###");
+		 sig.initVerify(key.getPublic());//sig对象得到公钥   
+		  
+		  
+		 //签名对象得到原始信息   
+		 sig.update(plainText);//sig对象得到原始数据(现实中是摘要)    
+		 try {    
+		     if (sig.verify(signature)) {//sig对象用公钥解密签名signature得到原始数据(即摘要)，一致则true    
+		         System.out.println("签名验证正确！！"+new String(plainText, "UTF8"));    
+		     } else {    
+		         System.out.println("签名验证失败！！");    
+		     }    
+		 } catch (SignatureException e) {    
+		     System.out.println("签名验证失败！！");    
+		 }    
+	}
+
+}

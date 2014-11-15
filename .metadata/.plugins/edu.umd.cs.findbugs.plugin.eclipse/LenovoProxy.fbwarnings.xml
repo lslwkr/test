@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0" sequence="1" timestamp="1415589406860" analysisTimestamp="1415589402830" release="">
+  <Project projectName="LenovoProxy">
+    <Jar>/Users/i063103/tmp/workspace/LenovoProxy/bin</Jar>
+    <AuxClasspathEntry>/Users/i063103/tmp/workspace/LenovoProxy/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/Users/i063103/tmp/workspace/LenovoProxy/lib/sunBase64.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/jre/lib/rt.jar</AuxClasspathEntry>
+    <SrcDir>/Users/i063103/tmp/workspace/LenovoProxy/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="ProxyClient">
+      <SourceLine classname="ProxyClient" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Class>
+    <Method classname="ProxyClient" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ProxyClient" start="11" end="15" startBytecode="0" endBytecode="11" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Method>
+    <LocalVariable name="client" register="1" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="ProxyClient" start="11" end="11" startBytecode="7" endBytecode="7" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    <SourceLine classname="ProxyClient" start="11" end="11" startBytecode="7" endBytecode="7" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="client"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="ProxyClient">
+      <SourceLine classname="ProxyClient" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Class>
+    <Method classname="ProxyClient" name="sendGet" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ProxyClient" start="20" end="61" startBytecode="0" endBytecode="877" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="ProxyClient" start="42" end="42" startBytecode="177" endBytecode="177" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    <SourceLine classname="ProxyClient" start="42" end="42" startBytecode="177" endBytecode="177" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="ProxyClient">
+      <SourceLine classname="ProxyClient" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Class>
+    <Method classname="ProxyClient" name="sendPost" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ProxyClient" start="66" end="112" startBytecode="0" endBytecode="789" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="ProxyClient" start="89" end="89" startBytecode="99" endBytecode="99" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    <SourceLine classname="ProxyClient" start="89" end="89" startBytecode="99" endBytecode="99" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="ProxyClient">
+      <SourceLine classname="ProxyClient" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Class>
+    <Method classname="ProxyClient" name="sendPost" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ProxyClient" start="66" end="112" startBytecode="0" endBytecode="789" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Method>
+    <Method classname="java.io.PrintWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintWriter" start="131" end="132" startBytecode="0" endBytecode="34" sourcefile="PrintWriter.java" sourcepath="java/io/PrintWriter.java"/>
+    </Method>
+    <SourceLine classname="ProxyClient" start="82" end="82" startBytecode="73" endBytecode="73" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    <SourceLine classname="ProxyClient" start="82" end="82" startBytecode="73" endBytecode="73" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="ProxyClient">
+      <SourceLine classname="ProxyClient" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Class>
+    <Method classname="ProxyClient" name="sendGet" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ProxyClient" start="20" end="61" startBytecode="0" endBytecode="877" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Method>
+    <SourceLine classname="ProxyClient" start="45" end="45" startBytecode="187" endBytecode="187" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="ProxyClient">
+      <SourceLine classname="ProxyClient" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Class>
+    <Method classname="ProxyClient" name="sendPost" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ProxyClient" start="66" end="112" startBytecode="0" endBytecode="789" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Method>
+    <SourceLine classname="ProxyClient" start="92" end="92" startBytecode="109" endBytecode="109" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE" first="1">
+    <Class classname="ProxyClient">
+      <SourceLine classname="ProxyClient" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Class>
+    <Method classname="ProxyClient" name="sendGet" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="ProxyClient" start="20" end="61" startBytecode="0" endBytecode="877" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    </Method>
+    <SourceLine classname="ProxyClient" start="38" end="38" startBytecode="140" endBytecode="140" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+    <SourceLine classname="ProxyClient" start="38" end="38" startBytecode="140" endBytecode="140" sourcefile="ProxyClient.java" sourcepath="ProxyClient.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="utils.Signature">
+      <SourceLine classname="utils.Signature" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Class>
+    <Method classname="utils.Signature" name="readKeyFile" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="utils.Signature" start="153" end="168" startBytecode="0" endBytecode="298" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Method>
+    <Method classname="java.io.ByteArrayOutputStream" name="toString" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.ByteArrayOutputStream" start="208" end="208" startBytecode="0" endBytecode="40" sourcefile="ByteArrayOutputStream.java" sourcepath="java/io/ByteArrayOutputStream.java"/>
+    </Method>
+    <SourceLine classname="utils.Signature" start="168" end="168" startBytecode="101" endBytecode="101" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    <SourceLine classname="utils.Signature" start="168" end="168" startBytecode="101" endBytecode="101" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="utils.Signature">
+      <SourceLine classname="utils.Signature" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Class>
+    <Method classname="utils.Signature" name="readKeyFile" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="utils.Signature" start="153" end="168" startBytecode="0" endBytecode="298" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="956" end="956" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="utils.Signature" start="164" end="164" startBytecode="78" endBytecode="78" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    <SourceLine classname="utils.Signature" start="164" end="164" startBytecode="78" endBytecode="78" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="utils.Signature">
+      <SourceLine classname="utils.Signature" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Class>
+    <Method classname="utils.Signature" name="sign" signature="(Ljava/lang/String;Ljava/lang/String;)[B" isStatic="true">
+      <SourceLine classname="utils.Signature" start="187" end="219" startBytecode="0" endBytecode="441" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="956" end="956" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="utils.Signature" start="212" end="212" startBytecode="119" endBytecode="119" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    <SourceLine classname="utils.Signature" start="212" end="212" startBytecode="119" endBytecode="119" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="utils.Signature">
+      <SourceLine classname="utils.Signature" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Class>
+    <Method classname="utils.Signature" name="signature" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="utils.Signature" start="73" end="91" startBytecode="0" endBytecode="419" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="956" end="956" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="utils.Signature" start="87" end="87" startBytecode="118" endBytecode="118" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    <SourceLine classname="utils.Signature" start="87" end="87" startBytecode="118" endBytecode="118" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="utils.Signature">
+      <SourceLine classname="utils.Signature" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Class>
+    <Method classname="utils.Signature" name="verify" signature="([BLjava/lang/String;[B)Z" isStatic="false">
+      <SourceLine classname="utils.Signature" start="236" end="264" startBytecode="0" endBytecode="416" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="556" end="557" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="utils.Signature" start="251" end="251" startBytecode="53" endBytecode="53" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    <SourceLine classname="utils.Signature" start="251" end="251" startBytecode="53" endBytecode="53" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="utils.Signature">
+      <SourceLine classname="utils.Signature" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Class>
+    <Method classname="utils.Signature" name="verify" signature="([BLjava/lang/String;[B)Z" isStatic="false">
+      <SourceLine classname="utils.Signature" start="236" end="264" startBytecode="0" endBytecode="416" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="956" end="956" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="utils.Signature" start="255" end="255" startBytecode="78" endBytecode="78" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    <SourceLine classname="utils.Signature" start="255" end="255" startBytecode="78" endBytecode="78" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="utils.Signature">
+      <SourceLine classname="utils.Signature" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Class>
+    <Method classname="utils.Signature" name="verifyWithCertificate" signature="(Ljava/security/PublicKey;Ljava/lang/String;Ljava/lang/String;)Z" isStatic="true">
+      <SourceLine classname="utils.Signature" start="123" end="136" startBytecode="0" endBytecode="210" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="956" end="956" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="utils.Signature" start="126" end="126" startBytecode="21" endBytecode="21" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    <SourceLine classname="utils.Signature" start="126" end="126" startBytecode="21" endBytecode="21" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="utils.Signature">
+      <SourceLine classname="utils.Signature" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Class>
+    <Method classname="utils.Signature" name="verifyWithPublicKey" signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z" isStatic="true">
+      <SourceLine classname="utils.Signature" start="99" end="117" startBytecode="0" endBytecode="312" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="getBytes" signature="()[B" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="956" end="956" startBytecode="0" endBytecode="37" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="utils.Signature" start="106" end="106" startBytecode="50" endBytecode="50" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    <SourceLine classname="utils.Signature" start="106" end="106" startBytecode="50" endBytecode="50" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="utils.Signature">
+      <SourceLine classname="utils.Signature" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Class>
+    <Method classname="utils.Signature" name="getPubKeyFromCertificate" signature="(Ljava/lang/String;)Ljava/security/PublicKey;" isStatic="false">
+      <SourceLine classname="utils.Signature" start="142" end="148" startBytecode="0" endBytecode="142" sourcefile="Signature.java" sourcepath="utils/Signature.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="utils.Signature" start="142" end="142" startBytecode="5" endBytecode="5" sourcefile="Signature.java" sourcepath="utils/Signature.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="utils.Signature" start="144" end="144" startBytecode="9" endBytecode="9" sourcefile="Signature.java" sourcepath="utils/Signature.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="utils.Signature" start="145" end="145" startBytecode="15" endBytecode="15" sourcefile="Signature.java" sourcepath="utils/Signature.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="utils.Signature" start="147" end="147" startBytecode="25" endBytecode="25" sourcefile="Signature.java" sourcepath="utils/Signature.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="utils.Signature" start="148" end="148" startBytecode="32" endBytecode="32" sourcefile="Signature.java" sourcepath="utils/Signature.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="utils.SignatureUtils">
+      <SourceLine classname="utils.SignatureUtils" sourcefile="SignatureUtils.java" sourcepath="utils/SignatureUtils.java"/>
+    </Class>
+    <Method classname="utils.SignatureUtils" name="createPrivateKey" signature="()Ljava/security/PrivateKey;" isStatic="true">
+      <SourceLine classname="utils.SignatureUtils" start="149" end="164" startBytecode="0" endBytecode="28" sourcefile="SignatureUtils.java" sourcepath="utils/SignatureUtils.java"/>
+    </Method>
+    <LocalVariable name="publicKey" register="0" pc="47" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="utils.SignatureUtils" start="163" end="163" startBytecode="46" endBytecode="46" sourcefile="SignatureUtils.java" sourcepath="utils/SignatureUtils.java"/>
+    <SourceLine classname="utils.SignatureUtils" start="163" end="163" startBytecode="46" endBytecode="46" sourcefile="SignatureUtils.java" sourcepath="utils/SignatureUtils.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="publicKey"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="utils.SignatureUtils">
+      <SourceLine classname="utils.SignatureUtils" sourcefile="SignatureUtils.java" sourcepath="utils/SignatureUtils.java"/>
+    </Class>
+    <Method classname="utils.SignatureUtils" name="createPrivateKey" signature="()Ljava/security/PrivateKey;" isStatic="true">
+      <SourceLine classname="utils.SignatureUtils" start="149" end="164" startBytecode="0" endBytecode="220" sourcefile="SignatureUtils.java" sourcepath="utils/SignatureUtils.java"/>
+    </Method>
+    <LocalVariable name="keyGen" register="2" pc="12" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="utils.SignatureUtils" start="160" end="160" startBytecode="26" endBytecode="26" sourcefile="SignatureUtils.java" sourcepath="utils/SignatureUtils.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="utils.SignatureUtils" start="152" end="152" startBytecode="4" endBytecode="4" sourcefile="SignatureUtils.java" sourcepath="utils/SignatureUtils.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="utils.SignatureUtils" start="155" end="155" startBytecode="15" endBytecode="15" sourcefile="SignatureUtils.java" sourcepath="utils/SignatureUtils.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <SourceLine classname="utils.SignatureUtils" start="157" end="157" startBytecode="17" endBytecode="17" sourcefile="SignatureUtils.java" sourcepath="utils/SignatureUtils.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 10 Nov 2014 09:32:13 +0800" total_classes="5" referenced_classes="61" total_bugs="18" total_size="562" num_packages="2" java_version="1.7.0_71" vm_version="24.71-b01" cpu_seconds="10.91" clock_seconds="4.05" peak_mbytes="841.86" alloc_mbytes="1820.50" gc_seconds="0.00" priority_2="6" priority_1="12">
+    <PackageStats package="" total_bugs="7" total_types="1" total_size="68" priority_2="3" priority_1="4">
+      <ClassStats class="ProxyClient" sourceFile="ProxyClient.java" interface="false" size="68" bugs="7" priority_2="3" priority_1="4"/>
+    </PackageStats>
+    <PackageStats package="utils" total_bugs="11" total_types="4" total_size="494" priority_2="3" priority_1="8">
+      <ClassStats class="utils.Base64" sourceFile="Base64.java" interface="false" size="75" bugs="0"/>
+      <ClassStats class="utils.BinaryUtil" sourceFile="BinaryUtil.java" interface="false" size="211" bugs="0"/>
+      <ClassStats class="utils.Signature" sourceFile="Signature.java" interface="false" size="129" bugs="9" priority_2="1" priority_1="8"/>
+      <ClassStats class="utils.SignatureUtils" sourceFile="SignatureUtils.java" interface="false" size="79" bugs="2" priority_2="2"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="388" invocations="2" avgMicrosecondsPerInvocation="194113" maxMicrosecondsPerInvocation="288395" standardDeviationMircosecondsPerInvocation="94282"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="254" invocations="506" avgMicrosecondsPerInvocation="502" maxMicrosecondsPerInvocation="14608" standardDeviationMircosecondsPerInvocation="1167"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="202" invocations="61" avgMicrosecondsPerInvocation="3325" maxMicrosecondsPerInvocation="19592" standardDeviationMircosecondsPerInvocation="3994"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="185" invocations="248" avgMicrosecondsPerInvocation="746" maxMicrosecondsPerInvocation="4411" standardDeviationMircosecondsPerInvocation="792"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="178" invocations="49" avgMicrosecondsPerInvocation="3635" maxMicrosecondsPerInvocation="39030" standardDeviationMircosecondsPerInvocation="6691"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="146" invocations="49" avgMicrosecondsPerInvocation="2985" maxMicrosecondsPerInvocation="25708" standardDeviationMircosecondsPerInvocation="5151"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="140" invocations="52" avgMicrosecondsPerInvocation="2710" maxMicrosecondsPerInvocation="24254" standardDeviationMircosecondsPerInvocation="4832"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="135" invocations="51" avgMicrosecondsPerInvocation="2663" maxMicrosecondsPerInvocation="20615" standardDeviationMircosecondsPerInvocation="4501"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="108" invocations="49" avgMicrosecondsPerInvocation="2211" maxMicrosecondsPerInvocation="19670" standardDeviationMircosecondsPerInvocation="3826"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="75" invocations="43" avgMicrosecondsPerInvocation="1753" maxMicrosecondsPerInvocation="14310" standardDeviationMircosecondsPerInvocation="3108"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="69" invocations="49" avgMicrosecondsPerInvocation="1423" maxMicrosecondsPerInvocation="16643" standardDeviationMircosecondsPerInvocation="2774"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="62" invocations="61" avgMicrosecondsPerInvocation="1019" maxMicrosecondsPerInvocation="5430" standardDeviationMircosecondsPerInvocation="1181"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="59" invocations="49" avgMicrosecondsPerInvocation="1218" maxMicrosecondsPerInvocation="15610" standardDeviationMircosecondsPerInvocation="2805"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="51" invocations="61" avgMicrosecondsPerInvocation="842" maxMicrosecondsPerInvocation="5687" standardDeviationMircosecondsPerInvocation="1233"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="46" invocations="61" avgMicrosecondsPerInvocation="770" maxMicrosecondsPerInvocation="3474" standardDeviationMircosecondsPerInvocation="814"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="42" invocations="27" avgMicrosecondsPerInvocation="1589" maxMicrosecondsPerInvocation="3873" standardDeviationMircosecondsPerInvocation="974"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="41" invocations="61" avgMicrosecondsPerInvocation="676" maxMicrosecondsPerInvocation="6158" standardDeviationMircosecondsPerInvocation="1015"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="36" invocations="61" avgMicrosecondsPerInvocation="605" maxMicrosecondsPerInvocation="3366" standardDeviationMircosecondsPerInvocation="775"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1415589406858" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,674 @@
+src/ProxyClient.java:7:	All classes and interfaces must belong to a named package
+src/ProxyClient.java:7:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/ProxyClient.java:7:	headerCommentRequirement Required
+src/ProxyClient.java:9:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/ProxyClient.java:9:	Parameter 'args' is not assigned and could be declared final
+src/ProxyClient.java:9:	publicMethodCommentRequirement Required
+src/ProxyClient.java:11:	Local variable 'client' could be declared final
+src/ProxyClient.java:12:	Local variable 'result' could be declared final
+src/ProxyClient.java:13:	System.out.println is used
+src/ProxyClient.java:19:	Found 'UR'-anomaly for variable 'key' (lines '19'-'38').
+src/ProxyClient.java:19:	Parameter 'param' is not assigned and could be declared final
+src/ProxyClient.java:19:	Parameter 'url' is not assigned and could be declared final
+src/ProxyClient.java:19:	publicMethodCommentRequirement Required
+src/ProxyClient.java:21:	Avoid variables with short names like in
+src/ProxyClient.java:21:	Found 'DD'-anomaly for variable 'in' (lines '21'-'41').
+src/ProxyClient.java:23:	Local variable 'urlNameString' could be declared final
+src/ProxyClient.java:24:	Local variable 'realUrl' could be declared final
+src/ProxyClient.java:26:	Local variable 'connection' could be declared final
+src/ProxyClient.java:26:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:28:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:29:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:30:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:33:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:35:	Local variable 'map' could be declared final
+src/ProxyClient.java:35:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:37:	Local variable 'key' could be declared final
+src/ProxyClient.java:37:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:38:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:38:	System.out.println is used
+src/ProxyClient.java:42:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:44:	Avoid assignments in operands
+src/ProxyClient.java:44:	Found 'DU'-anomaly for variable 'line' (lines '44'-'62').
+src/ProxyClient.java:44:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:45:	Prefer StringBuffer over += for concatenating strings
+src/ProxyClient.java:47:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/ProxyClient.java:48:	System.out.println is used
+src/ProxyClient.java:49:	Avoid printStackTrace(); use a logger call instead.
+src/ProxyClient.java:49:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:55:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:57:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/ProxyClient.java:58:	Avoid printStackTrace(); use a logger call instead.
+src/ProxyClient.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:65:	Parameter 'param' is not assigned and could be declared final
+src/ProxyClient.java:65:	Parameter 'url' is not assigned and could be declared final
+src/ProxyClient.java:65:	publicMethodCommentRequirement Required
+src/ProxyClient.java:66:	Found 'DD'-anomaly for variable 'out' (lines '66'-'82').
+src/ProxyClient.java:67:	Avoid variables with short names like in
+src/ProxyClient.java:67:	Found 'DD'-anomaly for variable 'in' (lines '67'-'88').
+src/ProxyClient.java:70:	Local variable 'realUrl' could be declared final
+src/ProxyClient.java:72:	Local variable 'conn' could be declared final
+src/ProxyClient.java:72:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:74:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:79:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:82:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:84:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:86:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:89:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:91:	Avoid assignments in operands
+src/ProxyClient.java:91:	Found 'DU'-anomaly for variable 'line' (lines '91'-'113').
+src/ProxyClient.java:91:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:92:	Prefer StringBuffer over += for concatenating strings
+src/ProxyClient.java:94:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/ProxyClient.java:95:	System.out.println is used
+src/ProxyClient.java:96:	Avoid printStackTrace(); use a logger call instead.
+src/ProxyClient.java:96:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:102:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:105:	Potential violation of Law of Demeter (object not created locally)
+src/ProxyClient.java:109:	Avoid printStackTrace(); use a logger call instead.
+src/ProxyClient.java:109:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:5:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/utils/Base64.java:5:	The class 'Base64' has a Cyclomatic Complexity of 10 (Highest = 16).
+src/utils/Base64.java:5:	The class 'Base64' has a Modified Cyclomatic Complexity of 8 (Highest = 12).
+src/utils/Base64.java:5:	The class 'Base64' has a Standard Cyclomatic Complexity of 8 (Highest = 12).
+src/utils/Base64.java:5:	headerCommentRequirement Required
+src/utils/Base64.java:6:	fieldCommentRequirement Required
+src/utils/Base64.java:15:	fieldCommentRequirement Required
+src/utils/Base64.java:25:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/utils/Base64.java:25:	Parameter 'data' is not assigned and could be declared final
+src/utils/Base64.java:25:	publicMethodCommentRequirement Required
+src/utils/Base64.java:26:	Avoid variables with short names like sb
+src/utils/Base64.java:26:	Local variable 'sb' could be declared final
+src/utils/Base64.java:27:	Local variable 'len' could be declared final
+src/utils/Base64.java:28:	Avoid variables with short names like i
+src/utils/Base64.java:29:	Avoid variables with short names like b1
+src/utils/Base64.java:29:	Avoid variables with short names like b2
+src/utils/Base64.java:29:	Avoid variables with short names like b3
+src/utils/Base64.java:29:	Use one line for each declaration, it enhances code readability.
+src/utils/Base64.java:33:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:34:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:35:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:40:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:41:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:42:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:43:	Avoid appending characters as strings in StringBuffer.append.
+src/utils/Base64.java:43:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:48:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:49:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:50:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:55:	Parameter 'str' is not assigned and could be declared final
+src/utils/Base64.java:55:	The method 'decode' has a Cyclomatic Complexity of 16.
+src/utils/Base64.java:55:	The method 'decode' has a Modified Cyclomatic Complexity of 12.
+src/utils/Base64.java:55:	The method 'decode' has a Standard Cyclomatic Complexity of 12.
+src/utils/Base64.java:55:	The method decode() has an NPath complexity of 2305
+src/utils/Base64.java:55:	publicMethodCommentRequirement Required
+src/utils/Base64.java:56:	Avoid variables with short names like sb
+src/utils/Base64.java:56:	Local variable 'sb' could be declared final
+src/utils/Base64.java:57:	Local variable 'data' could be declared final
+src/utils/Base64.java:58:	Local variable 'len' could be declared final
+src/utils/Base64.java:59:	Avoid variables with short names like i
+src/utils/Base64.java:60:	Avoid variables with short names like b1
+src/utils/Base64.java:60:	Avoid variables with short names like b2
+src/utils/Base64.java:60:	Avoid variables with short names like b3
+src/utils/Base64.java:60:	Avoid variables with short names like b4
+src/utils/Base64.java:60:	Use one line for each declaration, it enhances code readability.
+src/utils/Base64.java:66:	Avoid using if statements without curly braces
+src/utils/Base64.java:72:	Avoid using if statements without curly braces
+src/utils/Base64.java:73:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:77:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/Base64.java:77:	Avoid using Literals in Conditional Statements
+src/utils/Base64.java:77:	Avoid using if statements without curly braces
+src/utils/Base64.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:80:	Avoid using if statements without curly braces
+src/utils/Base64.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:85:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/Base64.java:85:	Avoid using Literals in Conditional Statements
+src/utils/Base64.java:85:	Avoid using if statements without curly braces
+src/utils/Base64.java:85:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:88:	Avoid using if statements without curly braces
+src/utils/Base64.java:89:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Base64.java:91:	Potential violation of Law of Demeter (object not created locally)
+src/utils/BinaryUtil.java:1:	Possible God class (WMC=70, ATFD=6, TCC=0.009523809523809525)
+src/utils/BinaryUtil.java:7:	Abstract classes should be named AbstractXXX
+src/utils/BinaryUtil.java:7:	The class 'BinaryUtil' has a Cyclomatic Complexity of 3 (Highest = 18).
+src/utils/BinaryUtil.java:7:	The class 'BinaryUtil' has a Modified Cyclomatic Complexity of 3 (Highest = 11).
+src/utils/BinaryUtil.java:7:	The class 'BinaryUtil' has a Standard Cyclomatic Complexity of 3 (Highest = 11).
+src/utils/BinaryUtil.java:7:	This abstract class does not have any abstract methods
+src/utils/BinaryUtil.java:7:	headerCommentRequirement Required
+src/utils/BinaryUtil.java:8:	This class has too many methods, consider refactoring it.
+src/utils/BinaryUtil.java:9:	fieldCommentRequirement Required
+src/utils/BinaryUtil.java:11:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:13:	Returning 'EMPTY_BINARY' may expose an internal array.
+src/utils/BinaryUtil.java:16:	Found 'UR'-anomaly for variable 'b' (lines '16'-'22').
+src/utils/BinaryUtil.java:16:	Parameter 'list' is not assigned and could be declared final
+src/utils/BinaryUtil.java:16:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:18:	Avoid variables with short names like i
+src/utils/BinaryUtil.java:18:	Avoid variables with short names like n
+src/utils/BinaryUtil.java:18:	Found 'DU'-anomaly for variable 'i' (lines '18'-'25').
+src/utils/BinaryUtil.java:18:	Local variable 'n' could be declared final
+src/utils/BinaryUtil.java:18:	Use one line for each declaration, it enhances code readability.
+src/utils/BinaryUtil.java:19:	Found 'DD'-anomaly for variable 'bytes' (lines '19'-'22').
+src/utils/BinaryUtil.java:20:	Local variable 'b' could be declared final
+src/utils/BinaryUtil.java:22:	Found 'DD'-anomaly for variable 'bytes' (lines '22'-'22').
+src/utils/BinaryUtil.java:27:	Parameter 'string' is not assigned and could be declared final
+src/utils/BinaryUtil.java:27:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:32:	Parameter 'string' is not assigned and could be declared final
+src/utils/BinaryUtil.java:32:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:37:	Parameter 'string' is not assigned and could be declared final
+src/utils/BinaryUtil.java:37:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:42:	Parameter 'string' is not assigned and could be declared final
+src/utils/BinaryUtil.java:42:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:47:	Avoid variables with short names like a
+src/utils/BinaryUtil.java:47:	Avoid variables with short names like b
+src/utils/BinaryUtil.java:47:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/utils/BinaryUtil.java:47:	Parameter 'a' is not assigned and could be declared final
+src/utils/BinaryUtil.java:47:	Parameter 'b' is not assigned and could be declared final
+src/utils/BinaryUtil.java:47:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:51:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/BinaryUtil.java:59:	Avoid variables with short names like a
+src/utils/BinaryUtil.java:59:	Avoid variables with short names like b
+src/utils/BinaryUtil.java:59:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/utils/BinaryUtil.java:59:	Parameter 'a' is not assigned and could be declared final
+src/utils/BinaryUtil.java:59:	Parameter 'b' is not assigned and could be declared final
+src/utils/BinaryUtil.java:59:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:63:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/BinaryUtil.java:78:	Parameter 'string' is not assigned and could be declared final
+src/utils/BinaryUtil.java:86:	Parameter 'length' is not assigned and could be declared final
+src/utils/BinaryUtil.java:86:	Parameter 'offset' is not assigned and could be declared final
+src/utils/BinaryUtil.java:86:	Parameter 'string' is not assigned and could be declared final
+src/utils/BinaryUtil.java:88:	Found 'DD'-anomaly for variable 'bytes' (lines '88'-'97').
+src/utils/BinaryUtil.java:88:	Found 'DU'-anomaly for variable 'bytes' (lines '88'-'100').
+src/utils/BinaryUtil.java:89:	Found 'DD'-anomaly for variable 'j' (lines '89'-'89').
+src/utils/BinaryUtil.java:89:	Found 'DU'-anomaly for variable 'j' (lines '89'-'100').
+src/utils/BinaryUtil.java:89:	Use one line for each declaration, it enhances code readability.
+src/utils/BinaryUtil.java:91:	Avoid variables with short names like hi
+src/utils/BinaryUtil.java:91:	Local variable 'hi' could be declared final
+src/utils/BinaryUtil.java:92:	Avoid variables with short names like lo
+src/utils/BinaryUtil.java:92:	Local variable 'lo' could be declared final
+src/utils/BinaryUtil.java:97:	Found 'DD'-anomaly for variable 'bytes' (lines '97'-'97').
+src/utils/BinaryUtil.java:97:	Found 'DU'-anomaly for variable 'bytes' (lines '97'-'100').
+src/utils/BinaryUtil.java:105:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/utils/BinaryUtil.java:105:	Parameter 'bytes' is not assigned and could be declared final
+src/utils/BinaryUtil.java:113:	Parameter 'bytes' is not assigned and could be declared final
+src/utils/BinaryUtil.java:113:	Parameter 'length' is not assigned and could be declared final
+src/utils/BinaryUtil.java:113:	Parameter 'offset' is not assigned and could be declared final
+src/utils/BinaryUtil.java:115:	Found 'DD'-anomaly for variable 'chars' (lines '115'-'119').
+src/utils/BinaryUtil.java:116:	Found 'DU'-anomaly for variable 'k' (lines '116'-'123').
+src/utils/BinaryUtil.java:116:	Use one line for each declaration, it enhances code readability.
+src/utils/BinaryUtil.java:118:	Local variable 'value' could be declared final
+src/utils/BinaryUtil.java:119:	Found 'DD'-anomaly for variable 'chars' (lines '119'-'120').
+src/utils/BinaryUtil.java:120:	Found 'DD'-anomaly for variable 'chars' (lines '120'-'119').
+src/utils/BinaryUtil.java:129:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/utils/BinaryUtil.java:129:	fieldCommentRequirement Required
+src/utils/BinaryUtil.java:130:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/utils/BinaryUtil.java:130:	fieldCommentRequirement Required
+src/utils/BinaryUtil.java:131:	Avoid excessively long variable names like TWENTYFOURBITGROUP
+src/utils/BinaryUtil.java:131:	Avoid unused private fields such as 'TWENTYFOURBITGROUP'.
+src/utils/BinaryUtil.java:131:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/utils/BinaryUtil.java:131:	fieldCommentRequirement Required
+src/utils/BinaryUtil.java:132:	Avoid unused private fields such as 'EIGHTBIT'.
+src/utils/BinaryUtil.java:132:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/utils/BinaryUtil.java:132:	fieldCommentRequirement Required
+src/utils/BinaryUtil.java:133:	Avoid unused private fields such as 'SIXTEENBIT'.
+src/utils/BinaryUtil.java:133:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/utils/BinaryUtil.java:133:	fieldCommentRequirement Required
+src/utils/BinaryUtil.java:134:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/utils/BinaryUtil.java:134:	fieldCommentRequirement Required
+src/utils/BinaryUtil.java:135:	Avoid unused private fields such as 'SIGN'.
+src/utils/BinaryUtil.java:135:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/utils/BinaryUtil.java:135:	fieldCommentRequirement Required
+src/utils/BinaryUtil.java:136:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/utils/BinaryUtil.java:136:	fieldCommentRequirement Required
+src/utils/BinaryUtil.java:137:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/utils/BinaryUtil.java:137:	fieldCommentRequirement Required
+src/utils/BinaryUtil.java:139:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/utils/BinaryUtil.java:139:	Variables that are final and static should be all capitals, 'base64Alphabet' is not all capitals.
+src/utils/BinaryUtil.java:139:	fieldCommentRequirement Required
+src/utils/BinaryUtil.java:140:	Avoid excessively long variable names like lookUpBase64Alphabet
+src/utils/BinaryUtil.java:140:	Avoid unused private fields such as 'lookUpBase64Alphabet'.
+src/utils/BinaryUtil.java:140:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/utils/BinaryUtil.java:140:	Variables that are final and static should be all capitals, 'lookUpBase64Alphabet' is not all capitals.
+src/utils/BinaryUtil.java:140:	fieldCommentRequirement Required
+src/utils/BinaryUtil.java:166:	Use one line for each declaration, it enhances code readability.
+src/utils/BinaryUtil.java:170:	Use one line for each declaration, it enhances code readability.
+src/utils/BinaryUtil.java:181:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/utils/BinaryUtil.java:181:	Parameter 'bytes' is not assigned and could be declared final
+src/utils/BinaryUtil.java:185:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/BinaryUtil.java:190:	Parameter 'bytes' is not assigned and could be declared final
+src/utils/BinaryUtil.java:190:	Parameter 'wrap' is not assigned and could be declared final
+src/utils/BinaryUtil.java:190:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:195:	Parameter 'bytes' is not assigned and could be declared final
+src/utils/BinaryUtil.java:195:	Parameter 'length' is not assigned and could be declared final
+src/utils/BinaryUtil.java:195:	Parameter 'offset' is not assigned and could be declared final
+src/utils/BinaryUtil.java:195:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:200:	Parameter 'bytes' is not assigned and could be declared final
+src/utils/BinaryUtil.java:200:	Parameter 'length' is not assigned and could be declared final
+src/utils/BinaryUtil.java:200:	Parameter 'offset' is not assigned and could be declared final
+src/utils/BinaryUtil.java:200:	Parameter 'wrap' is not assigned and could be declared final
+src/utils/BinaryUtil.java:200:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:202:	Avoid variables with short names like s
+src/utils/BinaryUtil.java:202:	Local variable 's' could be declared final
+src/utils/BinaryUtil.java:203:	Avoid variables with short names like n
+src/utils/BinaryUtil.java:203:	Local variable 'n' could be declared final
+src/utils/BinaryUtil.java:203:	Use one line for each declaration, it enhances code readability.
+src/utils/BinaryUtil.java:208:	Avoid using Literals in Conditional Statements
+src/utils/BinaryUtil.java:208:	These nested if statements could be combined
+src/utils/BinaryUtil.java:211:	Potential violation of Law of Demeter (object not created locally)
+src/utils/BinaryUtil.java:212:	Found 'DU'-anomaly for variable 'lineSize' (lines '212'-'255').
+src/utils/BinaryUtil.java:219:	Found 'DD'-anomaly for variable 'value' (lines '219'-'219').
+src/utils/BinaryUtil.java:219:	Found 'DD'-anomaly for variable 'value' (lines '219'-'226').
+src/utils/BinaryUtil.java:219:	Found 'DD'-anomaly for variable 'value' (lines '219'-'232').
+src/utils/BinaryUtil.java:219:	Found 'DU'-anomaly for variable 'value' (lines '219'-'255').
+src/utils/BinaryUtil.java:226:	Found 'DD'-anomaly for variable 'value' (lines '226'-'219').
+src/utils/BinaryUtil.java:226:	Found 'DD'-anomaly for variable 'value' (lines '226'-'226').
+src/utils/BinaryUtil.java:226:	Found 'DD'-anomaly for variable 'value' (lines '226'-'232').
+src/utils/BinaryUtil.java:226:	Found 'DU'-anomaly for variable 'value' (lines '226'-'255').
+src/utils/BinaryUtil.java:232:	Found 'DD'-anomaly for variable 'value' (lines '232'-'219').
+src/utils/BinaryUtil.java:232:	Found 'DD'-anomaly for variable 'value' (lines '232'-'226').
+src/utils/BinaryUtil.java:232:	Found 'DD'-anomaly for variable 'value' (lines '232'-'232').
+src/utils/BinaryUtil.java:232:	Found 'DU'-anomaly for variable 'value' (lines '232'-'255').
+src/utils/BinaryUtil.java:232:	Useless parentheses.
+src/utils/BinaryUtil.java:232:	Useless parentheses.
+src/utils/BinaryUtil.java:235:	Avoid assignments in operands
+src/utils/BinaryUtil.java:237:	Avoid variables with short names like x
+src/utils/BinaryUtil.java:237:	Local variable 'x' could be declared final
+src/utils/BinaryUtil.java:238:	Avoid variables with short names like c
+src/utils/BinaryUtil.java:238:	Local variable 'c' could be declared final
+src/utils/BinaryUtil.java:239:	Potential violation of Law of Demeter (object not created locally)
+src/utils/BinaryUtil.java:245:	Potential violation of Law of Demeter (object not created locally)
+src/utils/BinaryUtil.java:250:	Potential violation of Law of Demeter (object not created locally)
+src/utils/BinaryUtil.java:254:	Potential violation of Law of Demeter (object not created locally)
+src/utils/BinaryUtil.java:261:	Parameter 'base64String' is not assigned and could be declared final
+src/utils/BinaryUtil.java:261:	The method 'fromStringBase64' has a Cyclomatic Complexity of 18.
+src/utils/BinaryUtil.java:261:	The method 'fromStringBase64' has a Modified Cyclomatic Complexity of 11.
+src/utils/BinaryUtil.java:261:	The method 'fromStringBase64' has a Standard Cyclomatic Complexity of 11.
+src/utils/BinaryUtil.java:261:	The method fromStringBase64() has an NPath complexity of 648
+src/utils/BinaryUtil.java:263:	Local variable 'base64Chars' could be declared final
+src/utils/BinaryUtil.java:263:	Potential violation of Law of Demeter (method chain calls)
+src/utils/BinaryUtil.java:264:	Local variable 'len' could be declared final
+src/utils/BinaryUtil.java:269:	Local variable 'numberQuadruple' could be declared final
+src/utils/BinaryUtil.java:269:	Useless parentheses.
+src/utils/BinaryUtil.java:269:	Useless parentheses.
+src/utils/BinaryUtil.java:272:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/BinaryUtil.java:274:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/utils/BinaryUtil.java:274:	Found 'DD'-anomaly for variable 'decodedData' (lines '274'-'302').
+src/utils/BinaryUtil.java:274:	Found 'DD'-anomaly for variable 'decodedData' (lines '274'-'313').
+src/utils/BinaryUtil.java:274:	Found 'DD'-anomaly for variable 'decodedData' (lines '274'-'325').
+src/utils/BinaryUtil.java:274:	Found 'DU'-anomaly for variable 'decodedData' (lines '274'-'352').
+src/utils/BinaryUtil.java:275:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/utils/BinaryUtil.java:275:	Avoid variables with short names like b1
+src/utils/BinaryUtil.java:275:	Avoid variables with short names like b2
+src/utils/BinaryUtil.java:275:	Avoid variables with short names like b3
+src/utils/BinaryUtil.java:275:	Avoid variables with short names like b4
+src/utils/BinaryUtil.java:275:	Found 'DD'-anomaly for variable 'b1' (lines '275'-'287').
+src/utils/BinaryUtil.java:275:	Found 'DD'-anomaly for variable 'b2' (lines '275'-'288').
+src/utils/BinaryUtil.java:275:	Found 'DD'-anomaly for variable 'b3' (lines '275'-'308').
+src/utils/BinaryUtil.java:275:	Found 'DD'-anomaly for variable 'b3' (lines '275'-'326').
+src/utils/BinaryUtil.java:275:	Found 'DD'-anomaly for variable 'b3' (lines '275'-'345').
+src/utils/BinaryUtil.java:275:	Found 'DD'-anomaly for variable 'b4' (lines '275'-'327').
+src/utils/BinaryUtil.java:275:	Found 'DD'-anomaly for variable 'b4' (lines '275'-'346').
+src/utils/BinaryUtil.java:275:	Found 'DU'-anomaly for variable 'b1' (lines '275'-'352').
+src/utils/BinaryUtil.java:275:	Found 'DU'-anomaly for variable 'b2' (lines '275'-'352').
+src/utils/BinaryUtil.java:275:	Found 'DU'-anomaly for variable 'b3' (lines '275'-'352').
+src/utils/BinaryUtil.java:275:	Found 'DU'-anomaly for variable 'b4' (lines '275'-'352').
+src/utils/BinaryUtil.java:275:	Use one line for each declaration, it enhances code readability.
+src/utils/BinaryUtil.java:276:	Avoid variables with short names like d1
+src/utils/BinaryUtil.java:276:	Avoid variables with short names like d2
+src/utils/BinaryUtil.java:276:	Avoid variables with short names like d3
+src/utils/BinaryUtil.java:276:	Avoid variables with short names like d4
+src/utils/BinaryUtil.java:276:	Found 'DD'-anomaly for variable 'd1' (lines '276'-'282').
+src/utils/BinaryUtil.java:276:	Found 'DD'-anomaly for variable 'd2' (lines '276'-'282').
+src/utils/BinaryUtil.java:276:	Found 'DD'-anomaly for variable 'd3' (lines '276'-'289').
+src/utils/BinaryUtil.java:276:	Found 'DD'-anomaly for variable 'd4' (lines '276'-'290').
+src/utils/BinaryUtil.java:276:	Found 'DU'-anomaly for variable 'd3' (lines '276'-'352').
+src/utils/BinaryUtil.java:276:	Found 'DU'-anomaly for variable 'd4' (lines '276'-'352').
+src/utils/BinaryUtil.java:276:	Use one line for each declaration, it enhances code readability.
+src/utils/BinaryUtil.java:277:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/utils/BinaryUtil.java:277:	Avoid variables with short names like i
+src/utils/BinaryUtil.java:277:	Found 'DU'-anomaly for variable 'i' (lines '277'-'352').
+src/utils/BinaryUtil.java:278:	Found 'DD'-anomaly for variable 'encodedIndex' (lines '278'-'281').
+src/utils/BinaryUtil.java:279:	Found 'DD'-anomaly for variable 'dataIndex' (lines '279'-'280').
+src/utils/BinaryUtil.java:281:	Found 'DU'-anomaly for variable 'encodedIndex' (lines '281'-'352').
+src/utils/BinaryUtil.java:282:	Avoid assignments in operands
+src/utils/BinaryUtil.java:282:	Found 'DU'-anomaly for variable 'd1' (lines '282'-'352').
+src/utils/BinaryUtil.java:282:	Found 'DU'-anomaly for variable 'd2' (lines '282'-'352').
+src/utils/BinaryUtil.java:282:	Potential violation of Law of Demeter (method chain calls)
+src/utils/BinaryUtil.java:283:	Potential violation of Law of Demeter (method chain calls)
+src/utils/BinaryUtil.java:285:	The String literal "base64.decode" appears 5 times in this file; the first occurrence is on line 285
+src/utils/BinaryUtil.java:287:	Found 'DU'-anomaly for variable 'b1' (lines '287'-'352').
+src/utils/BinaryUtil.java:288:	Found 'DU'-anomaly for variable 'b2' (lines '288'-'352').
+src/utils/BinaryUtil.java:291:	Avoid if (x != y) ..; else ..;
+src/utils/BinaryUtil.java:302:	Found 'DD'-anomaly for variable 'decodedData' (lines '302'-'303').
+src/utils/BinaryUtil.java:303:	Found 'DD'-anomaly for variable 'decodedData' (lines '303'-'347').
+src/utils/BinaryUtil.java:303:	Found 'DU'-anomaly for variable 'decodedData' (lines '303'-'352').
+src/utils/BinaryUtil.java:313:	Found 'DD'-anomaly for variable 'decodedData' (lines '313'-'314').
+src/utils/BinaryUtil.java:314:	Found 'DD'-anomaly for variable 'decodedData' (lines '314'-'315').
+src/utils/BinaryUtil.java:315:	Found 'DD'-anomaly for variable 'decodedData' (lines '315'-'347').
+src/utils/BinaryUtil.java:315:	Found 'DU'-anomaly for variable 'decodedData' (lines '315'-'352').
+src/utils/BinaryUtil.java:325:	Found 'DD'-anomaly for variable 'decodedData' (lines '325'-'328').
+src/utils/BinaryUtil.java:328:	Found 'DD'-anomaly for variable 'decodedData' (lines '328'-'329').
+src/utils/BinaryUtil.java:329:	Found 'DD'-anomaly for variable 'decodedData' (lines '329'-'330').
+src/utils/BinaryUtil.java:330:	Found 'DD'-anomaly for variable 'decodedData' (lines '330'-'347').
+src/utils/BinaryUtil.java:330:	Found 'DU'-anomaly for variable 'decodedData' (lines '330'-'352').
+src/utils/BinaryUtil.java:332:	Found 'DU'-anomaly for variable 'encodedIndex' (lines '332'-'352').
+src/utils/BinaryUtil.java:333:	Found 'DU'-anomaly for variable 'dataIndex' (lines '333'-'352').
+src/utils/BinaryUtil.java:336:	Avoid assignments in operands
+src/utils/BinaryUtil.java:336:	Found 'DU'-anomaly for variable 'd1' (lines '336'-'352').
+src/utils/BinaryUtil.java:336:	Found 'DU'-anomaly for variable 'd2' (lines '336'-'352').
+src/utils/BinaryUtil.java:336:	Found 'DU'-anomaly for variable 'd3' (lines '336'-'352').
+src/utils/BinaryUtil.java:336:	Found 'DU'-anomaly for variable 'd4' (lines '336'-'352').
+src/utils/BinaryUtil.java:336:	Potential violation of Law of Demeter (method chain calls)
+src/utils/BinaryUtil.java:337:	Potential violation of Law of Demeter (method chain calls)
+src/utils/BinaryUtil.java:338:	Potential violation of Law of Demeter (method chain calls)
+src/utils/BinaryUtil.java:339:	Potential violation of Law of Demeter (method chain calls)
+src/utils/BinaryUtil.java:347:	Found 'DD'-anomaly for variable 'decodedData' (lines '347'-'348').
+src/utils/BinaryUtil.java:348:	Found 'DD'-anomaly for variable 'decodedData' (lines '348'-'349').
+src/utils/BinaryUtil.java:349:	Found 'DD'-anomaly for variable 'decodedData' (lines '349'-'347').
+src/utils/BinaryUtil.java:349:	Found 'DU'-anomaly for variable 'decodedData' (lines '349'-'352').
+src/utils/BinaryUtil.java:354:	Avoid variables with short names like c
+src/utils/BinaryUtil.java:354:	Parameter 'c' is not assigned and could be declared final
+src/utils/BinaryUtil.java:356:	Avoid using Literals in Conditional Statements
+src/utils/BinaryUtil.java:358:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/BinaryUtil.java:360:	Avoid using Literals in Conditional Statements
+src/utils/BinaryUtil.java:362:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/BinaryUtil.java:364:	Avoid using Literals in Conditional Statements
+src/utils/BinaryUtil.java:366:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/BinaryUtil.java:368:	Avoid using Literals in Conditional Statements
+src/utils/BinaryUtil.java:370:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/BinaryUtil.java:378:	Parameter 'octet' is not assigned and could be declared final
+src/utils/BinaryUtil.java:380:	Useless parentheses.
+src/utils/BinaryUtil.java:380:	Useless parentheses.
+src/utils/BinaryUtil.java:383:	Parameter 'octet' is not assigned and could be declared final
+src/utils/BinaryUtil.java:385:	Useless parentheses.
+src/utils/BinaryUtil.java:385:	Useless parentheses.
+src/utils/BinaryUtil.java:408:	Parameter 'bytes' is not assigned and could be declared final
+src/utils/BinaryUtil.java:408:	Parameter 'start' is not assigned and could be declared final
+src/utils/BinaryUtil.java:408:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:413:	Parameter 'bytes' is not assigned and could be declared final
+src/utils/BinaryUtil.java:413:	Parameter 'end' is not assigned and could be declared final
+src/utils/BinaryUtil.java:413:	Parameter 'start' is not assigned and could be declared final
+src/utils/BinaryUtil.java:413:	publicMethodCommentRequirement Required
+src/utils/BinaryUtil.java:415:	Avoid variables with short names like n
+src/utils/BinaryUtil.java:415:	Local variable 'n' could be declared final
+src/utils/BinaryUtil.java:416:	Local variable 'length' could be declared final
+src/utils/BinaryUtil.java:416:	Useless parentheses.
+src/utils/BinaryUtil.java:416:	Useless parentheses.
+src/utils/BinaryUtil.java:416:	Useless parentheses.
+src/utils/BinaryUtil.java:416:	Useless parentheses.
+src/utils/BinaryUtil.java:416:	Useless parentheses.
+src/utils/BinaryUtil.java:416:	Useless parentheses.
+src/utils/BinaryUtil.java:417:	Local variable 'newBytes' could be declared final
+src/utils/BinaryUtil.java:423:	Parameter 'bytes' is not assigned and could be declared final
+src/utils/BinaryUtil.java:423:	Parameter 'end' is not assigned and could be declared final
+src/utils/BinaryUtil.java:423:	Parameter 'start' is not assigned and could be declared final
+src/utils/BinaryUtil.java:423:	publicMethodCommentRequirement Required
+src/utils/Signature.java:26:	headerCommentRequirement Required
+src/utils/Signature.java:30:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/utils/Signature.java:30:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/utils/Signature.java:30:	Parameter 'args' is not assigned and could be declared final
+src/utils/Signature.java:30:	publicMethodCommentRequirement Required
+src/utils/Signature.java:32:	Local variable 'sig' could be declared final
+src/utils/Signature.java:38:	Local variable 'priKey' could be declared final
+src/utils/Signature.java:39:	Local variable 'pubKey' could be declared final
+src/utils/Signature.java:40:	Local variable 'cert' could be declared final
+src/utils/Signature.java:41:	Local variable 'password' could be declared final
+src/utils/Signature.java:43:	System.out.println is used
+src/utils/Signature.java:46:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/utils/Signature.java:46:	fieldCommentRequirement Required
+src/utils/Signature.java:48:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/utils/Signature.java:48:	Parameter 'e2eeCertificate' is not assigned and could be declared final
+src/utils/Signature.java:48:	Parameter 'e2eePrivateKey' is not assigned and could be declared final
+src/utils/Signature.java:48:	Parameter 'e2eePublicKey' is not assigned and could be declared final
+src/utils/Signature.java:48:	Parameter 'password' is not assigned and could be declared final
+src/utils/Signature.java:48:	Rather than using a lot of String arguments, consider using a container object for those values.
+src/utils/Signature.java:50:	Local variable 'privateKeyText' could be declared final
+src/utils/Signature.java:51:	Local variable 'publickKeyText' could be declared final
+src/utils/Signature.java:52:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/utils/Signature.java:52:	Found 'DU'-anomaly for variable 'pubKey' (lines '52'-'66').
+src/utils/Signature.java:52:	Local variable 'pubKey' could be declared final
+src/utils/Signature.java:54:	Local variable 'signText' could be declared final
+src/utils/Signature.java:70:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/utils/Signature.java:70:	Parameter 'password' is not assigned and could be declared final
+src/utils/Signature.java:70:	Parameter 'plainText' is not assigned and could be declared final
+src/utils/Signature.java:70:	Parameter 'privateKeyText' is not assigned and could be declared final
+src/utils/Signature.java:73:	Local variable 'keyBytes' could be declared final
+src/utils/Signature.java:74:	Local variable 'encryptPKInfo' could be declared final
+src/utils/Signature.java:75:	Local variable 'cipher' could be declared final
+src/utils/Signature.java:76:	Local variable 'pbeKeySpec' could be declared final
+src/utils/Signature.java:77:	Local variable 'secFac' could be declared final
+src/utils/Signature.java:78:	Local variable 'pbeKey' could be declared final
+src/utils/Signature.java:79:	Local variable 'algParams' could be declared final
+src/utils/Signature.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:81:	Local variable 'pkcs8KeySpec' could be declared final
+src/utils/Signature.java:82:	Local variable 'keyf' could be declared final
+src/utils/Signature.java:82:	The String literal "RSA" appears 4 times in this file; the first occurrence is on line 82
+src/utils/Signature.java:83:	Local variable 'prikey' could be declared final
+src/utils/Signature.java:84:	Local variable 'signet' could be declared final
+src/utils/Signature.java:84:	Potential violation of Law of Demeter (static property access)
+src/utils/Signature.java:85:	The String literal "MD5withRSA" appears 5 times in this file; the first occurrence is on line 85
+src/utils/Signature.java:86:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:87:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:88:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:89:	A catch statement that catches an exception only to rethrow it should be avoided.
+src/utils/Signature.java:96:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/utils/Signature.java:96:	Parameter 'plainText' is not assigned and could be declared final
+src/utils/Signature.java:96:	Parameter 'pubKeyText' is not assigned and could be declared final
+src/utils/Signature.java:96:	Parameter 'signText' is not assigned and could be declared final
+src/utils/Signature.java:96:	publicMethodCommentRequirement Required
+src/utils/Signature.java:99:	Local variable 'bobPubKeySpec' could be declared final
+src/utils/Signature.java:101:	Local variable 'keyFactory' could be declared final
+src/utils/Signature.java:101:	Potential violation of Law of Demeter (static property access)
+src/utils/Signature.java:101:	Unnecessary use of fully qualified name 'java.security.KeyFactory' due to existing import 'java.security.KeyFactory'
+src/utils/Signature.java:101:	Unnecessary use of fully qualified name 'java.security.KeyFactory.getInstance' due to existing import 'java.security.KeyFactory'
+src/utils/Signature.java:102:	Local variable 'pubKey' could be declared final
+src/utils/Signature.java:102:	Unnecessary use of fully qualified name 'java.security.PublicKey' due to existing import 'java.security.PublicKey'
+src/utils/Signature.java:103:	Local variable 'signed' could be declared final
+src/utils/Signature.java:104:	Local variable 'signatureChecker' could be declared final
+src/utils/Signature.java:104:	Potential violation of Law of Demeter (static property access)
+src/utils/Signature.java:105:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:106:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:107:	Avoid unnecessary if..then..else statements when returning booleans
+src/utils/Signature.java:107:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:109:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/Signature.java:115:	A catch statement that catches an exception only to rethrow it should be avoided.
+src/utils/Signature.java:115:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/utils/Signature.java:121:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/utils/Signature.java:121:	Parameter 'plainText' is not assigned and could be declared final
+src/utils/Signature.java:121:	Parameter 'pubKey' is not assigned and could be declared final
+src/utils/Signature.java:121:	Parameter 'signText' is not assigned and could be declared final
+src/utils/Signature.java:121:	publicMethodCommentRequirement Required
+src/utils/Signature.java:123:	Local variable 'signed' could be declared final
+src/utils/Signature.java:124:	Local variable 'signatureChecker' could be declared final
+src/utils/Signature.java:124:	Potential violation of Law of Demeter (static property access)
+src/utils/Signature.java:125:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:126:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:127:	Avoid unnecessary if..then..else statements when returning booleans
+src/utils/Signature.java:127:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:129:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/Signature.java:135:	A catch statement that catches an exception only to rethrow it should be avoided.
+src/utils/Signature.java:135:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/utils/Signature.java:140:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/utils/Signature.java:140:	Parameter 'path' is not assigned and could be declared final
+src/utils/Signature.java:142:	Local variable 'fin' could be declared final
+src/utils/Signature.java:144:	Avoid variables with short names like f
+src/utils/Signature.java:144:	Local variable 'f' could be declared final
+src/utils/Signature.java:145:	Local variable 'certificate' could be declared final
+src/utils/Signature.java:147:	Avoid variables with short names like pk
+src/utils/Signature.java:147:	Local variable 'pk' could be declared final
+src/utils/Signature.java:147:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:148:	Consider simply returning the value vs storing it in local variable 'pk'
+src/utils/Signature.java:152:	Parameter 'path' is not assigned and could be declared final
+src/utils/Signature.java:153:	Local variable 'privateKeyFile' could be declared final
+src/utils/Signature.java:154:	Local variable 'fis' could be declared final
+src/utils/Signature.java:155:	Local variable 'dis' could be declared final
+src/utils/Signature.java:157:	Local variable 'baos' could be declared final
+src/utils/Signature.java:161:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:162:	Avoid using if statements without curly braces
+src/utils/Signature.java:163:	Avoid using if statements without curly braces
+src/utils/Signature.java:163:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:164:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:164:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:166:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:167:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:168:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:179:	Parameter 'plainText' is not assigned and could be declared final
+src/utils/Signature.java:179:	Parameter 'privateKeyText' is not assigned and could be declared final
+src/utils/Signature.java:179:	Return an empty array rather than null.
+src/utils/Signature.java:182:	Comment is too large: Line too long
+src/utils/Signature.java:183:	Comment is too large: Line too long
+src/utils/Signature.java:187:	Local variable 'keyBytes' could be declared final
+src/utils/Signature.java:189:	Local variable 'password' could be declared final
+src/utils/Signature.java:190:	Local variable 'encryptPKInfo' could be declared final
+src/utils/Signature.java:191:	Local variable 'cipher' could be declared final
+src/utils/Signature.java:192:	Local variable 'pbeKeySpec' could be declared final
+src/utils/Signature.java:192:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:193:	Local variable 'secFac' could be declared final
+src/utils/Signature.java:194:	Local variable 'pbeKey' could be declared final
+src/utils/Signature.java:195:	Local variable 'algParams' could be declared final
+src/utils/Signature.java:196:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:197:	Local variable 'pkcs8KeySpec' could be declared final
+src/utils/Signature.java:205:	Local variable 'keyf' could be declared final
+src/utils/Signature.java:206:	Local variable 'prikey' could be declared final
+src/utils/Signature.java:209:	Local variable 'signet' could be declared final
+src/utils/Signature.java:209:	Potential violation of Law of Demeter (static property access)
+src/utils/Signature.java:211:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:212:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:213:	Local variable 'signed' could be declared final
+src/utils/Signature.java:213:	Potential violation of Law of Demeter (method chain calls)
+src/utils/Signature.java:213:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:214:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/Signature.java:214:	Consider simply returning the value vs storing it in local variable 'signed'
+src/utils/Signature.java:217:	Avoid printStackTrace(); use a logger call instead.
+src/utils/Signature.java:222:	Comment is too large: Too many lines
+src/utils/Signature.java:232:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/utils/Signature.java:232:	Parameter 'plainText' is not assigned and could be declared final
+src/utils/Signature.java:232:	Parameter 'pubKeyText' is not assigned and could be declared final
+src/utils/Signature.java:232:	Parameter 'signText' is not assigned and could be declared final
+src/utils/Signature.java:235:	Comment is too large: Line too long
+src/utils/Signature.java:236:	Local variable 'pubKeyText1' could be declared final
+src/utils/Signature.java:239:	Local variable 'bobPubKeySpec' could be declared final
+src/utils/Signature.java:242:	Local variable 'keyFactory' could be declared final
+src/utils/Signature.java:242:	Potential violation of Law of Demeter (static property access)
+src/utils/Signature.java:242:	Unnecessary use of fully qualified name 'java.security.KeyFactory' due to existing import 'java.security.KeyFactory'
+src/utils/Signature.java:242:	Unnecessary use of fully qualified name 'java.security.KeyFactory.getInstance' due to existing import 'java.security.KeyFactory'
+src/utils/Signature.java:245:	Found 'DD'-anomaly for variable 'pubKey' (lines '245'-'249').
+src/utils/Signature.java:245:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:245:	Unnecessary use of fully qualified name 'java.security.PublicKey' due to existing import 'java.security.PublicKey'
+src/utils/Signature.java:248:	Comment is too large: Line too long
+src/utils/Signature.java:251:	Local variable 'signed' could be declared final
+src/utils/Signature.java:252:	Local variable 'signatureChecker' could be declared final
+src/utils/Signature.java:252:	Potential violation of Law of Demeter (static property access)
+src/utils/Signature.java:254:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:255:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:257:	Avoid unnecessary if..then..else statements when returning booleans
+src/utils/Signature.java:257:	Potential violation of Law of Demeter (object not created locally)
+src/utils/Signature.java:258:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/Signature.java:258:	Avoid using if...else statements without curly braces
+src/utils/Signature.java:260:	A method should have only one exit point, and that should be the last statement in the method
+src/utils/Signature.java:260:	Avoid using if...else statements without curly braces
+src/utils/Signature.java:261:	A catch statement should never catch throwable since it includes errors.
+src/utils/Signature.java:262:	System.out.println is used
+src/utils/Signature.java:263:	Avoid printStackTrace(); use a logger call instead.
+src/utils/Signature.java:263:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:14:	Avoid importing anything from the sun.* packages
+src/utils/SignatureUtils.java:14:	Avoid unused imports such as 'sun.misc.BASE64Decoder'
+src/utils/SignatureUtils.java:15:	Avoid importing anything from the sun.* packages
+src/utils/SignatureUtils.java:17:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/utils/SignatureUtils.java:17:	headerCommentRequirement Required
+src/utils/SignatureUtils.java:19:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/utils/SignatureUtils.java:19:	Consider using varargs for methods or constructors which take an array the last parameter.
+src/utils/SignatureUtils.java:19:	Parameter 'args' is not assigned and could be declared final
+src/utils/SignatureUtils.java:19:	publicMethodCommentRequirement Required
+src/utils/SignatureUtils.java:27:	Found 'UR'-anomaly for variable 'provider' (lines '27'-'30').
+src/utils/SignatureUtils.java:27:	Found 'UR'-anomaly for variable 'service' (lines '27'-'32').
+src/utils/SignatureUtils.java:27:	publicMethodCommentRequirement Required
+src/utils/SignatureUtils.java:29:	Local variable 'provider' could be declared final
+src/utils/SignatureUtils.java:30:	System.out.println is used
+src/utils/SignatureUtils.java:31:	Local variable 'service' could be declared final
+src/utils/SignatureUtils.java:32:	System.out.println is used
+src/utils/SignatureUtils.java:34:	System.out.println is used
+src/utils/SignatureUtils.java:39:	A method/constructor shouldnt explicitly throw java.lang.Exception
+src/utils/SignatureUtils.java:39:	publicMethodCommentRequirement Required
+src/utils/SignatureUtils.java:41:	Local variable 'before' could be declared final
+src/utils/SignatureUtils.java:42:	Local variable 'plainText' could be declared final
+src/utils/SignatureUtils.java:42:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:45:	Local variable 'keyGen' could be declared final
+src/utils/SignatureUtils.java:46:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:47:	Local variable 'key' could be declared final
+src/utils/SignatureUtils.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:50:	Local variable 'sig' could be declared final
+src/utils/SignatureUtils.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:55:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:56:	Local variable 'signature' could be declared final
+src/utils/SignatureUtils.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:57:	Potential violation of Law of Demeter (method chain calls)
+src/utils/SignatureUtils.java:57:	Potential violation of Law of Demeter (method chain calls)
+src/utils/SignatureUtils.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:57:	System.out.println is used
+src/utils/SignatureUtils.java:60:	Local variable 'after1' could be declared final
+src/utils/SignatureUtils.java:61:	System.out.println is used
+src/utils/SignatureUtils.java:65:	Local variable 'pubKey' could be declared final
+src/utils/SignatureUtils.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:66:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:66:	System.out.println is used
+src/utils/SignatureUtils.java:67:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:67:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:71:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:73:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:74:	System.out.println is used
+src/utils/SignatureUtils.java:76:	System.out.println is used
+src/utils/SignatureUtils.java:79:	System.out.println is used
+src/utils/SignatureUtils.java:84:	publicMethodCommentRequirement Required
+src/utils/SignatureUtils.java:86:	Avoid unused local variables such as 'header'.
+src/utils/SignatureUtils.java:86:	Found 'DU'-anomaly for variable 'header' (lines '86'-'145').
+src/utils/SignatureUtils.java:86:	Local variable 'header' could be declared final
+src/utils/SignatureUtils.java:88:	Local variable 'claimTemplate' could be declared final
+src/utils/SignatureUtils.java:91:	Local variable 'token' could be declared final
+src/utils/SignatureUtils.java:97:	Avoid appending characters as strings in StringBuffer.append.
+src/utils/SignatureUtils.java:100:	Found 'DD'-anomaly for variable 'claimArray' (lines '100'-'101').
+src/utils/SignatureUtils.java:101:	Found 'DD'-anomaly for variable 'claimArray' (lines '101'-'102').
+src/utils/SignatureUtils.java:102:	Found 'DD'-anomaly for variable 'claimArray' (lines '102'-'103').
+src/utils/SignatureUtils.java:103:	Found 'DD'-anomaly for variable 'claimArray' (lines '103'-'107').
+src/utils/SignatureUtils.java:104:	Avoid variables with short names like tm
+src/utils/SignatureUtils.java:104:	Local variable 'tm' could be declared final
+src/utils/SignatureUtils.java:105:	System.out.println is used
+src/utils/SignatureUtils.java:106:	System.out.println is used
+src/utils/SignatureUtils.java:107:	Found 'DD'-anomaly for variable 'claimArray' (lines '107'-'108').
+src/utils/SignatureUtils.java:111:	Local variable 'payload' could be declared final
+src/utils/SignatureUtils.java:113:	Local variable 'b64Encoder' could be declared final
+src/utils/SignatureUtils.java:117:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:121:	Comment is too large: Line too long
+src/utils/SignatureUtils.java:122:	Comment is too large: Line too long
+src/utils/SignatureUtils.java:124:	Local variable 'privateKey' could be declared final
+src/utils/SignatureUtils.java:127:	Local variable 'signature' could be declared final
+src/utils/SignatureUtils.java:128:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:129:	Potential violation of Law of Demeter (method chain calls)
+src/utils/SignatureUtils.java:129:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:130:	Local variable 'signedPayload' could be declared final
+src/utils/SignatureUtils.java:130:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:133:	Avoid appending characters as strings in StringBuffer.append.
+src/utils/SignatureUtils.java:133:	StringBuffer (or StringBuilder).append is called consecutively without reusing the target variable.
+src/utils/SignatureUtils.java:138:	System.out.println is used
+src/utils/SignatureUtils.java:140:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/utils/SignatureUtils.java:141:	Avoid printStackTrace(); use a logger call instead.
+src/utils/SignatureUtils.java:147:	Comment is too large: Line too long
+src/utils/SignatureUtils.java:148:	Use explicit scoping instead of the default package private level
+src/utils/SignatureUtils.java:149:	Avoid unused local variables such as 'publicKey'.
+src/utils/SignatureUtils.java:149:	Found 'DD'-anomaly for variable 'publicKey' (lines '149'-'163').
+src/utils/SignatureUtils.java:150:	Found 'DD'-anomaly for variable 'privateKey' (lines '150'-'162').
+src/utils/SignatureUtils.java:152:	Found 'DD'-anomaly for variable 'keyGen' (lines '152'-'154').
+src/utils/SignatureUtils.java:157:	Avoid printStackTrace(); use a logger call instead.
+src/utils/SignatureUtils.java:157:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:159:	Local variable 'keysize' could be declared final
+src/utils/SignatureUtils.java:160:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:161:	Local variable 'keyPair' could be declared final
+src/utils/SignatureUtils.java:161:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:162:	Potential violation of Law of Demeter (object not created locally)
+src/utils/SignatureUtils.java:163:	Found 'DU'-anomaly for variable 'publicKey' (lines '163'-'165').
+src/utils/SignatureUtils.java:163:	Potential violation of Law of Demeter (object not created locally)

@@ -1,0 +1,228 @@
+Found a 14 line (135 tokens) duplication in the following files: 
+Starting at line 74 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Signature.java
+Starting at line 190 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Signature.java
+
+			EncryptedPrivateKeyInfo encryptPKInfo = new EncryptedPrivateKeyInfo(keyBytes);
+			Cipher cipher = Cipher.getInstance(encryptPKInfo.getAlgName());
+			PBEKeySpec pbeKeySpec = new PBEKeySpec(password.toCharArray());
+			SecretKeyFactory secFac = SecretKeyFactory.getInstance(encryptPKInfo.getAlgName());
+			Key pbeKey = secFac.generateSecret(pbeKeySpec);
+			AlgorithmParameters algParams = encryptPKInfo.getAlgParameters();
+			cipher.init(Cipher.DECRYPT_MODE, pbeKey, algParams);
+			KeySpec pkcs8KeySpec = encryptPKInfo.getKeySpec(cipher);
+			KeyFactory keyf = KeyFactory.getInstance("RSA");
+			PrivateKey prikey = keyf.generatePrivate(pkcs8KeySpec);
+			java.security.Signature signet = java.security.Signature
+					.getInstance("MD5withRSA");
+			signet.initSign(prikey);
+			signet.update(plainText.getBytes());
+=====================================================================
+Found a 7 line (80 tokens) duplication in the following files: 
+Starting at line 325 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+Starting at line 344 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+
+            decodedData = new byte[encodedIndex + 3];
+            b3 = base64Alphabet[d3];
+            b4 = base64Alphabet[d4];
+            decodedData[encodedIndex++] = (byte)(b1 << 2 | b2 >> 4) ;
+            decodedData[encodedIndex++] = (byte)(((b2 & 0xf) << 4) | ((b3 >> 2) & 0xf));
+            decodedData[encodedIndex++] = (byte)(b3 << 6 | b4);
+        }
+=====================================================================
+Found a 17 line (73 tokens) duplication in the following files: 
+Starting at line 103 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Signature.java
+Starting at line 123 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Signature.java
+
+			byte[] signed = BinaryUtil.fromStringBase64(signText);
+			java.security.Signature signatureChecker = java.security.Signature.getInstance("MD5withRSA");
+			signatureChecker.initVerify(pubKey);
+			signatureChecker.update(plainText.getBytes());
+			if (signatureChecker.verify(signed))
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		} catch (Exception e) {
+		
+			throw e;
+		}
+	}
+=====================================================================
+Found a 2 line (63 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 17 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 2 line (60 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 17 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 2 line (57 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 17 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 2 line (54 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 17 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 2 line (51 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 17 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 3 line (49 tokens) duplication in the following files: 
+Starting at line 40 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 47 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+            sb.append(base64EncodeChars[b1 >>> 2]);
+            sb.append(base64EncodeChars[((b1 & 0x03) << 4) | ((b2 & 0xf0) >>> 4)]);
+            sb.append(base64EncodeChars[(b2 & 0x0f) << 2]);
+=====================================================================
+Found a 1 line (48 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 17 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 1 line (45 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 17 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 5 line (43 tokens) duplication in the following files: 
+Starting at line 103 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Signature.java
+Starting at line 123 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Signature.java
+Starting at line 251 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Signature.java
+
+			byte[] signed = BinaryUtil.fromStringBase64(signText);
+			java.security.Signature signatureChecker = java.security.Signature.getInstance("MD5withRSA");
+			signatureChecker.initVerify(pubKey);
+			signatureChecker.update(plainText.getBytes());
+			if (signatureChecker.verify(signed))
+=====================================================================
+Found a 1 line (42 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 17 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 1 line (39 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 17 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 1 line (36 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 17 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 2 line (35 tokens) duplication in the following files: 
+Starting at line 282 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+Starting at line 336 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+
+        if (! isData((d1 = (byte)base64Chars[dataIndex++]))
+            || ! isData((d2 = (byte)base64Chars[dataIndex++])))
+=====================================================================
+Found a 4 line (35 tokens) duplication in the following files: 
+Starting at line 31 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 38 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        b1 = data[i++] & 0xff;
+        if (i == len) {
+            sb.append(base64EncodeChars[b1 >>> 2]);
+            sb.append(base64EncodeChars[(b1 & 0x3) << 4]);
+=====================================================================
+Found a 1 line (33 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 18 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 3 line (32 tokens) duplication in the following files: 
+Starting at line 100 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Signature.java
+Starting at line 240 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Signature.java
+
+					BinaryUtil.fromStringBase64(pubKeyText));
+			java.security.KeyFactory keyFactory = java.security.KeyFactory.getInstance("RSA");
+			java.security.PublicKey pubKey = keyFactory.generatePublic(bobPubKeySpec);
+=====================================================================
+Found a 6 line (32 tokens) duplication in the following files: 
+Starting at line 283 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+Starting at line 339 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+
+            || ! isData((d2 = (byte)base64Chars[dataIndex++])))
+        {
+            throw new IllegalArgumentException("base64.decode");
+        }
+        b1 = base64Alphabet[d1];
+        b2 = base64Alphabet[d2];
+=====================================================================
+Found a 4 line (31 tokens) duplication in the following files: 
+Starting at line 217 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+Starting at line 224 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+
+            if (i < n - 2)
+            {
+                value = (0x00FF0000 & (bytes[i] << 16))
+                    | (0x0000FF00 & (bytes[i + 1] << 8))
+=====================================================================
+Found a 1 line (30 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 18 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 9 line (29 tokens) duplication in the following files: 
+Starting at line 47 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+Starting at line 59 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+
+    public static boolean equal(byte[] a, byte[] b)
+    {
+        if (a == null || b == null)
+        {
+            return false;
+        }
+        else
+        {
+            return Arrays.equals(a, b);
+=====================================================================
+Found a 1 line (27 tokens) duplication in the following files: 
+Starting at line 315 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+Starting at line 329 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+Starting at line 348 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/BinaryUtil.java
+
+                decodedData[encodedIndex] = (byte)(((b2 & 0xf) << 4) | ((b3 >> 2) & 0xf));
+=====================================================================
+Found a 1 line (27 tokens) duplication in the following files: 
+Starting at line 16 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+Starting at line 18 of /Users/i063103/tmp/workspace/LenovoProxy/src/utils/Base64.java
+
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+=====================================================================
+Found a 4 line (26 tokens) duplication in the following files: 
+Starting at line 42 of /Users/i063103/tmp/workspace/LenovoProxy/src/ProxyClient.java
+Starting at line 89 of /Users/i063103/tmp/workspace/LenovoProxy/src/ProxyClient.java
+
+                    connection.getInputStream()));
+            String line;
+            while ((line = in.readLine()) != null) {
+                result += line + "\n";
